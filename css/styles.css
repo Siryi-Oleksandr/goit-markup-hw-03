@@ -1,0 +1,275 @@
+/* Головна палітра кольорів */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-text-color: #ffffff;
+  /* CSS-змінні фонові кольори */
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+  --accent-bg-color: #2196f3;
+  --white-bg-color: #ffffff;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: Roboto, Raleway, Montserrat, sans-serif;
+  letter-spacing: 0.03em;
+
+  margin: 0;
+}
+
+/* скидання деяких налаштувань списків та посилань */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* скидаємо MARGIN де це потрібно */
+ul,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Верхня лінія сторінки Студія */
+.logo-web {
+  color: #2196f3;
+  text-decoration: none;
+
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.header .logo-web {
+  display: inline-block;
+  margin: 25px 0;
+}
+
+.logo-studio {
+  color: #000000;
+}
+.header {
+  background-color: var(--white-bg-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav a.current {
+  color: var(--accent-color);
+}
+
+.nav a {
+  color: var(--title-text-color);
+}
+.nav a:hover,
+.nav a:focus {
+  color: var(--accent-color);
+}
+
+.contacts a {
+  color: var(--primary-text-color);
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--accent-color);
+}
+
+/* Основний контент сторінки Студія */
+
+/* Герой */
+
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+
+  color: var(--white-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero .button {
+  color: var(--white-text-color);
+  background-color: var(--accent-bg-color);
+  cursor: pointer;
+
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 216px;
+  min-height: 50px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+}
+
+/* Основний контент Студія-Особливості */
+
+.section-features {
+  margin-top: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* КОНТЕЙНЕР */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-features .subtitle {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section-features p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* "Чим ми займаємося" AND "Наша команда" */
+
+.section-work h2,
+.section-team h2 {
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section-work {
+  padding-bottom: 94px;
+}
+
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--secondary-bg-color);
+}
+
+.section-team h3 {
+  margin-top: 30px;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.section-team p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Підвал сторінки */
+
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.footer-text {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+}
+
+.footer .logo-web {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+footer .logo-studio {
+  color: #ffffff;
+}
+
+.footer .address {
+  color: var(--white-text-color);
+}
+
+.footer-address a {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-address a:hover,
+.footer-address a:focus {
+  color: var(--accent-color);
+}
+
+/* Main content of a page Portfolio */
+
+.filters .button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+}
+
+.filters .button:hover,
+.filters .button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-bg-color);
+}
+
+.section-projects h2 {
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.section-projects p {
+  font-size: 16px;
+  line-height: 1.88;
+}
